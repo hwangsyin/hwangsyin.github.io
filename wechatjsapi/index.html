@@ -9,9 +9,9 @@
         WeChat JS API Test!
     </body>
     <script type="text/javascript">
-        /*WeixinJSBridge.invoke('getNetworkType', {}, function(e) {
-            alert(e);        
-        });*/
-        alert("end");
+        function foo(e) {
+            alert(e);
+        }
+        document.addEventListener("WeixinJSBridgeReady", foo, false);
     </script>
 </html>
