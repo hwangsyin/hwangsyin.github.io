@@ -9,8 +9,9 @@
         WeChat JS API Test!
     </body>
     <script type="text/javascript">
-        for (key in window) {
-            alert(key);
+        function foo() {
+            alert("loaded.");
         }
+        document.addEventListener("load", foo, false);
     </script>
 </html>
