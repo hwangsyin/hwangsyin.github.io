@@ -9,10 +9,8 @@
         WeChat JS API Test!
     </body>
     <script type="text/javascript">
-        try {
-            alert(WeixinJSBridge);
-        } catch (e) {
-            alert("no WeixinJSBridge object.");
+        for (key in window) {
+            alert(key);
         }
     </script>
 </html>
