@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
         <script type="text/javascript">
-            function foo() {
-                alert("loaded.");
+            function foo(e) {
+                alert(typeof e);
             }
             document.addEventListener("WeixinJSBridgeReady", foo, false);
         </script>
