@@ -7,7 +7,7 @@
         <script type="text/javascript">
             function foo(e) {
                 for (key in window.WeixinJSBridge) {
-                    alert(key);
+                    alert(key + ": " + window.WeixinJSBridge[key].toString());
                 }
             }
             document.addEventListener("WeixinJSBridgeReady", foo, false);
