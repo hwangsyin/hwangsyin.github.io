@@ -9,8 +9,8 @@
         WeChat JS API Test!
     </body>
     <script type="text/javascript">
-        if (window.WeixinJSBridge) {
-            alert("in WeChat.");
-        }
+        WeixinJSBridge.invoke('getNetworkType', {}, function(e) {
+            alert(e);        
+        });
     </script>
 </html>
