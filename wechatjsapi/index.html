@@ -9,12 +9,10 @@
         WeChat JS API Test!
     </body>
     <script type="text/javascript">
-        if (document.addEventListener) {
-            alert("document.addEventListener");
-        } else if (document.attachEvent) {
-            alert("document.attachEvent");
-        } else {
-            alert("none");
+        try {
+            alert(WeixinJSBridge);
+        } catch (e) {
+            alert("no WeixinJSBridge object.");
         }
     </script>
 </html>
