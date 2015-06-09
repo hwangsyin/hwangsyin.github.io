@@ -3,13 +3,34 @@
   <head>
     <title>My News Reddit</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <style type="text/css">
+      html, body {
+        margin: 0;
+    	padding: 0;
+      }
+      body {
+        padding: 1em;
+      }
+      .category {
+        margin: 0 auto;
+        border: 1px solid #d3d3d3;
+        border-radius: 3px;
+        box-shadow: 1px 1px 5px #d8d8d8, -1px -1px 5px #d8d8d8;
+      }
+    </style>
   </head>
   <body>
-  <p><a href="http://reddit.com/r/ceph" target="_blank">reddit.com/r/ceph</a></p>
+  <div class="category">
+    <p><a href="http://reddit.com/r/ceph" target="_blank">reddit.com/r/ceph</a></p>
+    <p><a href="http://reddit.com/r/mysql" target="_blank">reddit.com/r/mysql</a></p>
+  </div>
   <p><a href="http://reddit.com/r/golang" target="_blank">reddit.com/r/golang</a></p>
   <p><a href="http://reddit.com/r/java" target="_blank">reddit.com/r/java</a></p>
   <p><a href="http://infoq.com" target="_blank">infoq.com</a></p>
   <p><a href="http://radar.oreilly.com" target="_blank">radar.oreilly.com</a></p>
-  <p><a href="http://reddit.com/r/mysql" target="_blank">reddit.com/r/mysql</a></p>
+  <div class="category">
+    <p><a href="http://reddit.com/r/nginx" target="_blank">reddit.com/r/nginx</a></p>
+  </div>
   </body>
 </html>
