@@ -14,7 +14,7 @@
         background-color: #e5e5e5;
       }
       .category {
-        margin: 0 auto;
+        margin: 0 auto 16px auto;
         padding: 20px;
         border: 1px solid #d3d3d3;
         border-radius: 5px;
@@ -26,9 +26,19 @@
 	  .content {
 		margin-top: 16px;
 	  }
+	  .content a {
+		text-decoration: none;
+	  }
     </style>
   </head>
   <body>
+  <div class="category">
+    <div class="title">News</div>
+	<div class="content">
+	  <p><a href="http://infoq.com" target="_blank">infoq.com</a></p>
+	  <p><a href="http://radar.oreilly.com" target="_blank">radar.oreilly.com</a></p>
+	</div>
+  </div>
   <div class="category">
     <div class="title">Database</div>
 	<div class="content">
@@ -36,12 +46,23 @@
       <p><a href="http://reddit.com/r/mysql" target="_blank">reddit.com/r/mysql</a></p>
 	</div>
   </div>
-  <p><a href="http://reddit.com/r/golang" target="_blank">reddit.com/r/golang</a></p>
-  <p><a href="http://reddit.com/r/java" target="_blank">reddit.com/r/java</a></p>
-  <p><a href="http://infoq.com" target="_blank">infoq.com</a></p>
-  <p><a href="http://radar.oreilly.com" target="_blank">radar.oreilly.com</a></p>
   <div class="category">
-    <p><a href="http://reddit.com/r/nginx" target="_blank">reddit.com/r/nginx</a></p>
+    <div class="title">Java</div>
+	<div class="content">
+      <p><a href="http://reddit.com/r/java" target="_blank">reddit.com/r/java</a></p>
+	</div>
+  </div>
+  <div class="category">
+    <div class="title">Golang</div>
+	<div class="content">
+      <p><a href="http://reddit.com/r/golang" target="_blank">reddit.com/r/golang</a></p>
+	</div>
+  </div>  
+  <div class="category">
+    <div class="title">Web Server</div>
+	<div class="content">
+      <p><a href="http://reddit.com/r/nginx" target="_blank">reddit.com/r/nginx</a></p>
+	</div>
   </div>
   </body>
 </html>
