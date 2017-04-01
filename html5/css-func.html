@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>css func</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      :root {
+        --site-header-height: 30px;
+        --site-nav-width: 60px;
+      }
+      .site-header {
+        border: solid 1px #d3d3d3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: var(--site-header-height);
+      }
+      .site-nav {
+        border: solid 1px #d3d3d3;
+        position: absolute;
+        top: var(site-header-height);
+        left: 0;
+        width: var(site-nav-width);
+        height: calc(100% - var(--site-header-height));
+      }
+      .site-content {
+        border: solid 1px #d3d3d3;
+        position: absolute;
+        top: var(site-header-height);
+        left: var(site-nav-width);
+        height: calc(100% - var(site-header-height));
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header"></header>
+    <nav class="site-nav"></nav>
+    <section class="site-content"></section>
+  </body>
+</html>
